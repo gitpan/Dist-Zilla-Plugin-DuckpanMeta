@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::DuckpanMeta::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Dist::Zilla::Plugin::DuckpanMeta::VERSION = '0.001';
+  $Dist::Zilla::Plugin::DuckpanMeta::VERSION = '0.002';
 }
 # ABSTRACT: DistZilla plugin for gathering DuckPAN related (so far only DDG related) meta information
 
@@ -16,6 +16,7 @@ use namespace::autoclean;
 use Dist::Zilla::File::FromCode;
 use JSON::MaybeXS;
 use Class::Load ':all';
+use Carp qw( croak );
 
 ### EVIL WORKAROUND
 use File::Spec;
@@ -45,7 +46,9 @@ sub gather_files {
 					my %data;
 					eval {
 						try_load_class($class) unless is_class_loaded($class);
-						if ($INC{$file_without_lib} ne $file->name) {
+						if (!defined $INC{$file_without_lib}) {
+							warn "Class ".$class." failed to load!";
+						} elsif ($INC{$file_without_lib} ne $file->name) {
 							warn "Class ".$class." already loaded from another location, can't parse it.";
 						} else {
 							if ($class->can('does')) {
@@ -95,7 +98,7 @@ Dist::Zilla::Plugin::DuckpanMeta - DistZilla plugin for gathering DuckPAN relate
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

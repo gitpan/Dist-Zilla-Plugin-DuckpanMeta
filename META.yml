@@ -21,7 +21,7 @@ requires:
 resources:
   homepage: https://github.com/duckduckgo/p5-dist-zilla-plugin-duckpanmeta
   repository: https://github.com/duckduckgo/p5-dist-zilla-plugin-duckpanmeta.git
-version: 0.001
+version: 0.002
 x_Dist_Zilla:
   perl:
     version: 5.018000
