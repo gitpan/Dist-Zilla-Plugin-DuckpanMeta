@@ -1,0 +1,13 @@
+
+
+This archive contains the distribution Dist-Zilla-Plugin-DuckpanMeta,
+version 0.001:
+
+  DistZilla plugin for gathering DuckPAN related (so far only DDG related) meta information
+
+This software is copyright (c) 2013 by Torsten Raudssus.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+

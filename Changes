@@ -1,0 +1,35 @@
+==================================================
+Changes from 1740-01-27 00:00:00 +0000 to present.
+==================================================
+
+------------------------------------------
+version 0.001 at 2013-11-10 01:12:37 +0000
+------------------------------------------
+
+  Change: 74643c87f27e0d1c48c3761cab7c32b7746b4f69
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-11-10 02:09:59 +0000
+
+    Yeah, travis and tests.... 
+
+  Change: 6a00224b1f7f3a3099a88353ef57d1b1f1e36006
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-11-10 02:08:39 +0000
+
+    Ok a bit documentation and stuff... blabla ;) 
+
+  Change: d750d06b58be5d1191619ce785dce4e7beca7186
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-11-10 02:06:45 +0000
+
+    First release, does what it needs todo 
+
+  Change: 5134fb717464b44a7755129728f185a7391418d1
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-11-09 23:26:30 +0000
+
+    initial commit 
+
+================
+End of releases.
+================
